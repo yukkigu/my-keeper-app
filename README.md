@@ -6,6 +6,13 @@ There is no database in this project, so the notes will be deleted once the page
 
 _This project is based on the Udemy Course ["The Complete 2024 Web Development Bootcamp"](https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=ST15MT100124A) by Dr.Angela Yu_
 
+## Setup / Installation
+
+- `git clone <repository-url>`
+- `cd my-keeper-app`
+- Run `npm install`
+- Then `npm run dev` and the website should open on localhost
+
 ---
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
