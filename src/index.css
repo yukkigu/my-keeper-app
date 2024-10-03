@@ -1,0 +1,130 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  --base-color: #edd37e;
+  --secondary-color: #f0f3f3;
+  --text-color: rgb(38, 46, 38);
+  --shading: #8b8457;
+  /* color: black;
+  background-color: #faf9ff; */
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  padding: 0 16px;
+}
+
+header {
+  color: white;
+  background-color: var(--base-color);
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: white;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+.holder {
+  position: relative;
+  min-height: 100vh;
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  color: rgb(172, 172, 172);
+}
+
+.note {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #9690ab;
+  width: 250px;
+  margin: 15px;
+  padding: 10px;
+  float: left;
+}
+
+.note h1 {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+form #addButton {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: var(--base-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.note #deleteButton {
+  color: var(--base-color);
+  border: none;
+  font-weight: 200;
+  border-radius: 7px;
+  cursor: pointer;
+  position: relative;
+  float: right;
+}
+
+form #addButton:hover {
+  background-color: var(--shading);
+}
+
+.note #deleteButton:hover {
+  color: var(--shading);
+}
